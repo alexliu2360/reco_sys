@@ -15,7 +15,7 @@ HADOOP_HOME="/root/bigdata/hadoop"
 PYSPARK_DRIVER_PYTHON="/root/anaconda3/envs/reco_sys/bin/python"
 PYSPARK_PYTHON = "/miniconda2/envs/reco_sys/bin/python"
 # 当存在多个版本时，不指定很可能会导致出错
-os.environ["JAVA_HOME"] = JAVA_HOME
+os.environ["JAVA_HOME"] = JAVA_topicsHOME
 os.environ["SPARK_HOME"] = SPARK_HOME
 os.environ["HADOOP_HOME"] = HADOOP_HOME
 os.environ["PYSPARK_PYTHON"] = PYSPARK_PYTHON

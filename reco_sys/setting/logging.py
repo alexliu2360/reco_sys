@@ -21,3 +21,26 @@ def create_logger():
     log_trace = logging.getLogger('offline')
     log_trace.addHandler(trace_file_handler)
     log_trace.setLevel(logging.INFO)
+
+    # 添加到需要打印日志内容的文件中
+    # logger = logging.getLogger('online')
+
+    # 在线更新日志
+    # 离线处理更新打印日志
+    trace_file_handler = logging.FileHandler(
+        os.path.join(logging_file_dir, 'online.log')
+    )
+    trace_file_handler.setFormatter(logging.Formatter('%(message)s'))
+    log_trace = logging.getLogger('online')
+    log_trace.addHandler(trace_file_handler)
+    log_trace.setLevel(logging.INFO)
+
+    # 实施推荐日志
+    # 离线处理更新打印日志
+    trace_file_handler = logging.FileHandler(
+        os.path.join(logging_file_dir, 'recommend.log')
+    )
+    trace_file_handler.setFormatter(logging.Formatter('%(message)s'))
+    log_trace = logging.getLogger('recommend')
+    log_trace.addHandler(trace_file_handler)
+    log_trace.setLevel(logging.INFO)
