@@ -94,7 +94,7 @@ urllib3                 ==1.22
 vine                    ==1.1.4
 wcwidth                 ==0.1.7
 webencodings            ==0.5.1
-wheel                   ==0.32.3
+wheel                   ==0.38.1
 widgetsnbextension      ==3.4.2
 xadmin                  ==0.6.1
 xlrd                    ==1.1.0
